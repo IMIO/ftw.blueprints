@@ -7,20 +7,10 @@ from zope.component import getUtility
 from zope.interface import classProvides
 from zope.interface import implements
 
-
-if getFSVersionTuple() >= (5,):
-    # Plone 5
-    from plone.app.multilingual.interfaces import IMutableTG
-    from plone.app.multilingual.interfaces import ITranslatable
-    from plone.app.multilingual.interfaces import ITranslationManager
-    from Products.CMFPlone.interfaces import ILanguage
-
-else:
-    # Plone <= 4
-    from plone.multilingual.interfaces import ILanguage
-    from plone.multilingual.interfaces import IMutableTG
-    from plone.multilingual.interfaces import ITranslatable
-    from plone.multilingual.interfaces import ITranslationManager
+from plone.app.multilingual.interfaces import IMutableTG
+from plone.app.multilingual.interfaces import ITranslatable
+from plone.app.multilingual.interfaces import ITranslationManager
+from Products.CMFPlone.interfaces import ILanguage
 
 
 class LinguaPloneItemLinker(object):
