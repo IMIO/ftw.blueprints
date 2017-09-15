@@ -10,7 +10,7 @@ from zope.interface import implements
 from plone.app.multilingual.interfaces import IMutableTG
 from plone.app.multilingual.interfaces import ITranslatable
 from plone.app.multilingual.interfaces import ITranslationManager
-from Products.CMFPlone.interfaces import ILanguage
+from plone.app.multilingual.interfaces import ILanguage
 
 
 class LinguaPloneItemLinker(object):
